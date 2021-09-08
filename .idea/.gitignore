@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+<<<<<<< HEAD
+/../../../../../../:\Users\user\Desktop\ezshopNew\.idea/dataSources/
+=======
+/../../../../../../:\Users\user\Desktop\EzShop\.idea/dataSources/
+>>>>>>> de9925a7fad5a1e8325a445a90c5d20fa75c69f5
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

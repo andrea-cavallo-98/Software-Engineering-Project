@@ -1,0 +1,10 @@
+changelist:
+- EzShop.getSaleTransaction() result is null when the requested transaction is not closed. (isOpen() was not checked)
+- InvalidTransactionID is thrown also when transactionId is 0 (<= instead of < in validateTransactionId()) -> Line 501 of PaymentController
+- Inverted a block in issueCashPayment (when called with a not existing transaction and invalid cash amount returned -1 before throwing the exception)
+- Inverted a block in addProductToSale (when called with a not existing transaction and invalid quantity returned -1 before throwing the exception)
+- InvalidQuantityException was thrown also when amount was smaller then the quantity into the sale
+- Explicit card validation into issueCardPayment and issueReturnCardPayment
+- Inverted a block in issueOrder (when called with a not existing Product and invalid quantity returned -1 before throwing the exception)
+- DeleteUser now checks whether a row is affected or not by the DELETE query.
+- getProductByDescription now returns products containing the keyword into their description. Not products which their description is equal to the keyword
